@@ -14,9 +14,9 @@ My research interests are:
 - Self-supervised and unsupervised learning
 
 **Talks & Slides**<br>
-[Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://clarahoffmann.github.io/ete-presentation/), manim-animated slides, - *Talk at the German Statistical Week*, 2022
+[Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://clarahoffmann.github.io/ete-presentation/), manim-animated slides - *Talk at the German Statistical Week*, 2022
 
 **Publications**<br>
 [Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://arxiv.org/abs/2110.01050) - *accepted for publication in Annals of Applied Statistics*, 2022
 
-<a href="clarahoffmann.github.io/clarahoffmann/cv/CV_Clara_Hoffmann.pdf" target="_blank">Find my CV here.</a>
+<a href="clarahoffmann.github.io/clarahoffmann/cv/CV_Clara_Hoffmann.pdf)" target="_blank">Find my CV here.</a>
