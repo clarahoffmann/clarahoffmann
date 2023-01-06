@@ -19,5 +19,4 @@ My research interests are:
 **Publications**<br>
 [Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://arxiv.org/abs/2110.01050) - *accepted for publication in Annals of Applied Statistics*, 2022
 
-[Find my CV here](https://github.com/clarahoffmann/clarahoffmann/blob/gh-pages/CV_Clara_Hoffmann.pdf)
-<a href="clarahoffmann.github.io/clarahoffmann/CV_Clara_Hoffmann.pdf" target="_blank">PDF.</a>
+<a href="clarahoffmann.github.io/clarahoffmann/CV_Clara_Hoffmann.pdf" target="_blank">Find my CV here.</a>
