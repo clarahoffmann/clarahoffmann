@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 
+title: Clara Hoffmann
 description: >- # this means to ignore newlin es until "baseurl:"
   Welcome to my world! We're currently under construction ;)
 # baseurl: "" # the subpath of your site, e.g. /blog
