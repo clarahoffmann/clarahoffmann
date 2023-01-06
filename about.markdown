@@ -4,13 +4,14 @@ title: About
 permalink: /about/
 ---
 
-I'm a Ph.D. student at the [RC Trust](https://rc-trust.ai/). Formerly, I worked as an ML Engineer, wrangling with satellite data (mostly Synthetic Aperture Radar).
+I'm a Ph.D. student in Uncertainty Quantification and Statistical Learning at the *[Research Center Trustworthy Data Science and Security (UA Ruhr)](https://rc-trust.ai/)*. Formerly, I worked as an ML Engineer, wrangling with satellite data (mostly Synthetic Aperture Radar).
 My research interests are:
 - Bayesian uncertainty quantification in Deep Learning
 - Efficiently estimating intractable probability densities 
 - Deep Learning for Synthetic Aperture Radar data
 - Calibrating predictive densities for DL tasks
 - Modelling disease severity trajectories based on MRI data
+- Self-supervised and unsupervised learning
 
 **Talks & Slides**<br>
 [Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://clarahoffmann.github.io/ete-presentation/), manim-animated slides, - *Talk at the German Statistical Week*, 2022
