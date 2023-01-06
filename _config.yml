@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: LeNPaul/Millennial
+remote_theme: LeNPaul/Millennial
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
