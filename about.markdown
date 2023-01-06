@@ -19,4 +19,7 @@ My research interests are:
 **Publications**<br>
 [Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://arxiv.org/abs/2110.01050) - *accepted for publication in Annals of Applied Statistics*, 2022
 
+**Other**
+Take a look at the [Rapid Response Insights project]((https://www.youtube.com/watch?v=4E24OPviN0k)) I worked on as an ML Engineer at LiveEO to identify storm damages on radar images (German)
+
 Find my CV  <a href="https://clarahoffmann.github.io/clarahoffmann/cv/CV_Clara_Hoffmann.pdf" target="_blank">here.</a>
