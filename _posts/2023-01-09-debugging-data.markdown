@@ -10,9 +10,19 @@ categories: pytorch python
 </script>
 
 When building custom PyTorch models, the model usually does not learn on the first try - even with extensive hyperparameter tuning. The same issue can appear after refactoring models that were already functional.
-The reasons can be manifold: Most commonly, either 
-1. 🪲 The model contains a bug - i.e. mixed-up channels, faulty augmentations, mixed up signs in a custom loss function etc.). This can easily happen when we're not dealing with a single off-the-shelf model but some sequences of models or custom loss functions, layers or add-ons that are taken freshly from the literature.
-2. 💾 The data does not contain information to learn something (either due to wrong labels, mixing up datasets, etc.). This usually happens, when the data processing pipeline contains errors or we're dealing with a some prototyping project where success or failure is not clear yet.
+The reasons can be manifold: Most commonly, we are dealing with one (or both) of two problems:
+
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">🪲 Model bugs</b></td>
+    <td><b style="font-size:30px">💾 Data issues</b></td>
+ </tr>
+ <tr>
+    <td>The model contains a bug - i.e. mixed-up channels, faulty augmentations, mixed up signs in a custom loss function etc.). This can easily happen when we're not dealing with a single off-the-shelf model but some sequences of models or custom loss functions, layers or add-ons that are taken freshly from the literature. ...</td>
+    <td>The data does not contain information to learn something (either due to wrong labels, mixing up datasets, etc.). This usually happens, when the data processing pipeline contains errors or we're dealing with a some prototyping project where success or failure is not clear yet.</td>
+ </tr>
+</table>
+
 
 # Find the culprit for the lack of convergence
 <img align="right" src="https://clarahoffmann.github.io/clarahoffmann/images/debug_data_seagull.jpg" alt="drawing" style="width:270px;"  >
@@ -32,8 +42,9 @@ Luckily, there are more efficient approaches to locating the culprit for models 
 # Creating synthetic training data for different input and label formats
 Synthetic training data is a popular way to prove superiority of new DL methods with low computational effort. Creating synthetic training data requires obtaining some statistical knowledge. This extra effort makes some practicioners refrain from generating synthetic data. But once the concept for creating data is obtained once, the payoff is huge.
 
-<p align="center">
-<img  src="https://clarahoffmann.github.io/clarahoffmann/images/synthetic_data_process.png" alt="drawing" style="width:500px;"  >
+<p style="text-align: center;">
+<img  style="display: block;  auto;"  src="https://clarahoffmann.github.io/clarahoffmann/images/synthetic_data_process.png" alt="drawing" style="width:500px;" >
+Process to debug a model with synthetic data 
 </p>
 
 Step (1) comprises questions such as *Do you have pixel level segmentation, object detection with bounding boxes, simple regression or classification?*. Step (2) is the most challenging and is described later in this article.
