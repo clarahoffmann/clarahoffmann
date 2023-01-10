@@ -5,6 +5,10 @@ date:   2023-01-06 13:36:25 +0100
 categories: pytorch python
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 When building custom PyTorch models, the model usually does not learn on the first try - even with extensive hyperparameter tuning. The same issue can appear after refactoring models that were already functional.
 The reasons can be manifold: Most commonly, either 
 1. 🪲 The model contains a bug - i.e. mixed-up channels, faulty augmentations, mixed up signs in a custom loss function etc.). This can easily happen when we're not dealing with a single off-the-shelf model but some sequences of models or custom loss functions, layers or add-ons that are taken freshly from the literature.
