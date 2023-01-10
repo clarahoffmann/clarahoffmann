@@ -11,7 +11,7 @@ The reasons can be manifold: Most commonly, either
 2. 💾 The data does not contain information to learn something (either due to wrong labels, mixing up datasets, etc.). This usually happens, when the data processing pipeline contains errors or we're dealing with a some prototyping project where success or failure is not clear yet.
 
 # Find the culprit for the lack of convergence
-<img align="right" src="../images/debug_data_seagull.jpg" alt="drawing" style="width:300px;"  >
+<img align="right" src="https://clarahoffmann.github.io/clarahoffmann/images/debug_data_seagull.jpg" alt="drawing" style="width:300px;"  >
 
 Due to the plethora of potential reasons, debugging the training process is usually not straightforward. Diving into the debugger, decorating the code with print() statements, or going through the training examples by hand does not guarantee that the error is found - and can be quite overwhelming for engineers working under time pressure.
 Luckily, there are more efficient approaches to locating the culprit for models that do not converge. This article introduces three main approaches to identify who's at fault for a lack of convergences and to prevent bugs from appearing again
