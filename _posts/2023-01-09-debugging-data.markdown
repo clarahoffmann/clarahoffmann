@@ -36,16 +36,8 @@ Synthetic training data is a popular way to prove superiority of new DL methods 
 <img  src="https://clarahoffmann.github.io/clarahoffmann/images/synthetic_data_process.png" alt="drawing" style="width:500px;"  >
 </p>
 
-
-**Step 1:** Identify what label and input format is required
-- *Do you have pixel level segmentation, object detection with bounding boxes, simple regression or classification?*
-
-**Step 2:** Identify suitable and most basic distributional families that are required
-- *For a classification scenario with 5 mutually exclusive labels, you'd like to select 5 normal distributions with as little overlap as possible.* (insert graph here)
-
-**Step 3:** Generate your data and divide into train and test set
-
-**Step 4:** Train your model
+Step (1) comprises questions such as *Do you have pixel level segmentation, object detection with bounding boxes, simple regression or classification?*. Step (2) is the most challenging and is described later in this article.
+Interpreting the results from our training run is straightforward:
 - If your model trains well after hyperparameter tuning: It's likely not buggy 🎉 -> check the validity your real-world data
 - If it doesn't train: There's likely a 🪲 somewhere in the code...
 
