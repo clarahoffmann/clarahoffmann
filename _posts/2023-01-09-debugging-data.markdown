@@ -56,3 +56,6 @@ where $\epsilon$ follows some distribution. We have to keep in mind that this da
 <img  src="https://clarahoffmann.github.io/clarahoffmann/images/object_detection_generate_data.png" alt="drawing" style="width:500px;"  >
 </p>
 
+
+$y=ax+b$
+
