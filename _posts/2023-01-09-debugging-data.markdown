@@ -44,7 +44,6 @@ Synthetic training data is a popular way to prove superiority of new DL methods 
 
 <p style="text-align: center;">
 <img  style="display: block;  auto;"  src="https://clarahoffmann.github.io/clarahoffmann/images/synthetic_data_process.png" alt="drawing" style="width:500px;" >
-Process to debug a model with synthetic data 
 </p>
 
 Step (1) comprises questions such as *Do you have pixel level segmentation, object detection with bounding boxes, simple regression or classification?*. Step (2) is the most challenging and is described later in this article.
@@ -68,7 +67,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-2. **Classification:** If the number of classes are few, we can generate inputs for each class from different normal distributions, which do not have a great overlap in their densities. Generate from \\(X_i\\) corresponding to class $i$ via \\(X_i ~ N(\mu, \Sigma)\\) and save \\(\{X_i, i\}\\) as one training example. Repeat this as many times as you need samples. This approach also allows to directly determine whether you want to test on an imbalanced or balanced dataset. In a more advanced version, it would also be possible to generate from a regression model as in 1. and use a link function as in generalized linear models.
+2. **Classification:** If the number of classes are few, we can generate inputs for each class from different normal distributions, which do not have a great overlap in their densities. Generate from \\(X_i\\) corresponding to class \\(i\\) via \\(X_i \sim N(\mu, \Sigma)\\) and save \\(\{X_i, i\}\\) as one training example. Repeat this as many times as you need samples. This approach also allows to directly determine whether you want to test on an imbalanced or balanced dataset. In a more advanced version, it would also be possible to generate from a regression model as in 1. and use a link function as in generalized linear models.
 
 3. **Object detection (2D or 3D tensors):**
 - Create empty patches (all initialized to zero) and sample random bounding box coordinates on the patch. Set all values in the patch to a distinct value for each object class. For further complexity, a value for each patch can be generated from a regression model.
