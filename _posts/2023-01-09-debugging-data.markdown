@@ -48,10 +48,10 @@ Synthetic training data is a popular way to prove superiority of new DL methods 
 There are several ways to generate synthetic training data. Luckily, for model debugging we can stick to very simple data generating mechanisms! We just want to test whether our model is working or not.
 Let's distinguish between different application cases:
 
-1. **Regression:**  Here we can simply generate from a linear regression model: \\(\y = X \beta + \epsilon\\), 
-where $\epsilon$ follows some distribution. We have to keep in mind that this data could also be learned by a model without non-linear activation functions! To also catch this bug, it makes sense to introduce some non-linear link function around our regression model such as: $y = (X \beta + \epsilon)^3$. 
+1. **Regression:**  Here we can simply generate from a linear regression model: \\(y = X \beta + \epsilon\\), 
+where \\(\epsilon\\) follows some distribution. We have to keep in mind that this data could also be learned by a model without non-linear activation functions! To also catch this bug, it makes sense to introduce some non-linear link function around our regression model such as: \\(y = (X \beta + \epsilon)^3\\). 
 
-2. **Classification:** If the number of classes are few, we can generate inputs for each class from different normal distributions, which do not have a great overlap in their densities. Generate from $X_i$ corresponding to class $i$ via $X_i ~ N(\mu, \Sigma)$ and save {X_i, i} as one training example. Repeat this as many times as you need samples. This approach also allows to directly determine whether you want to test on an imbalanced or balanced dataset. In a more advanced version, it would also be possible to generate from a regression model as in 1. and use a link function as in generalized linear models.
+2. **Classification:** If the number of classes are few, we can generate inputs for each class from different normal distributions, which do not have a great overlap in their densities. Generate from \\(X_i\\) corresponding to class $i$ via \\(X_i ~ N(\mu, \Sigma)\\) and save \\(\{X_i, i\}\\) as one training example. Repeat this as many times as you need samples. This approach also allows to directly determine whether you want to test on an imbalanced or balanced dataset. In a more advanced version, it would also be possible to generate from a regression model as in 1. and use a link function as in generalized linear models.
 
 3. **Object detection (2D or 3D tensors):**
 - Create empty patches (all initialized to zero) and sample random bounding box coordinates on the patch. Set all values in the patch to a distinct value for each object class. For further complexity, a value for each patch can be generated from a regression model.
@@ -60,6 +60,4 @@ where $\epsilon$ follows some distribution. We have to keep in mind that this da
 <img  src="https://clarahoffmann.github.io/clarahoffmann/images/object_detection_generate_data.png" alt="drawing" style="width:500px;"  >
 </p>
 
-
-$y=ax+b$
 
