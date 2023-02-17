@@ -4,7 +4,8 @@ title: About me
 permalink: /about/
 ---
 
-I'm starting as a  Ph.D. student in Uncertainty Quantification and Statistical Learning at the *[Research Center Trustworthy Data Science and Security (UA Ruhr)](https://rc-trust.ai/)* in February 2023. Formerly, I worked as an ML Engineer, wrangling with satellite data (mostly Synthetic Aperture Radar).
+I'm a Ph.D. candidate in Uncertainty Quantification and Statistical Learning at the *[Research Center Trustworthy Data Science and Security (UA Ruhr)](https://rc-trust.ai/)*. Formerly, I worked as an ML Engineer, wrangling with satellite data (mostly Synthetic Aperture Radar).
+
 My research interests are:
 - Bayesian uncertainty quantification in Deep Learning
 - Efficiently estimating intractable probability densities 
