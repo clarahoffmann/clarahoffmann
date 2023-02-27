@@ -77,3 +77,49 @@ print_hi('Tom')
 </p>
 
 
+# Theory-based checks
+Training PyTorch models typically involves three building blocks:
+(1) model structure
+(2) train and validation methods
+(3) data loaders 
+
+<p align="center">
+<img  src="https://clarahoffmann.github.io/clarahoffmann/images/building_blocks.png" alt="drawing" style="width:500px;"  >
+</p>
+
+Each one of these can be subject to errors. It can be quite tricky to locate errors in these structures. This is especially true if we're dealing with dimensionality, value, or range errors. These types of errors often don't hinder our model from running and still produce reasonable outputs.
+
+**The term "theory-based" might strike experienced users as excessive here - given the simple nature of the checks. For example, checking whether weights are updated in a training loop might seem natural. However, also this simple check is based on DL theory and our model construct. For example, we might be doing a fine-tuning task, where only the weights of the last layer should be updated. Checking that all previous layers are frozen and the last one is updated is completely rooted in theory in this case".**
+
+Here is a short summary of most commion model bugs that can appear in the basic building blocks
+
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">model structure</b></td>
+    <td><b style="font-size:30px">training/validation loop </b></td>
+    <td><b style="font-size:30px">dataloader</b></td>
+ </tr>
+ <tr>
+    <td>
+    <ul>
+    <li>Weights not updated in correct manner</li>
+    <li>Layers skipped or not connected</li>
+    <li>Activation functions missing</li>
+   </ul>
+   </td>
+<td>
+<ul>
+    <li>NaN/Inf values appearing during forward/backward passes</li>
+    <li>Incorrect output range (e.g. softmax outputs not within [0,1] range </li>
+    <li>Activation functions missing</li>
+   </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Wrong format of data</li>
+    <li>Input channels mixed-up </li>
+    <li>Incorrect input value range (e.g. images not normalized to [0,1])</li>
+    </ul>
+     </td>
+ </tr>
+</table>
