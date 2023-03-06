@@ -56,16 +56,20 @@ Interpreting the results from our training run is straightforward:
 There are several ways to generate synthetic training data. Luckily, for model debugging we can stick to very simple data generating mechanisms! We just want to test whether our model is working or not.
 Let's distinguish between different application cases:
 
-1. **Regression:**  Here we can simply generate from a linear regression model: \\(y = X \beta + \epsilon\\), 
-where \\(\epsilon\\) follows some distribution. We have to keep in mind that this data could also be learned by a model without non-linear activation functions! To also catch this bug, it makes sense to introduce some non-linear link function around our regression model such as: \\(y = (X \beta + \epsilon)^3\\). 
+1. **Regression:**  
 
-{% highlight python %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+**Synthetic data creation by hand:**  
+Synthetic data for regression cases needs to be nonlinear. The most straightforward way to generate nonlinear data is to leverage sin and cosine functions.
+Input datapoints can be drawn from simple, cheap distributions such as the uniform distribution.
+Draw \\({x_i}_{i=1}^n\\) from \\(\mathcal{U}(-1,1) \\), generate \\(y_i = \sin(8*(x_i - 1.2)) + \epsilon_i \\), where  \\(\epsilon_i \sim \mathcal{N}(0, 0.01^2) \\).
+
+Dataset split: Train and test splits can be created in a standard way by randomly assigning x% of the data to the train set and (100 - x)% to the test set. If out-of-distribution samples are expected and the model should be robust against this, a gap split is more suitable. Here, the input space is partitioned into two disjoint sets. For example, if \\X \sim (\mathcal{U}(-1,1) \\), we choose the train set as all \\(x_i \in [-0.8, 0.8]\\) and the test set as \\(x_i \in [1, -0.8) \cup (0.8 1] \\). This way we achieve a 80/20 train/test split.
+
+
+**Off-the-shelf synthetic data in Python:**  
+
+Several packages in Python provide functionalities to generate synthetic, nonlinear data.
+
 
 2. **Classification:** If the number of classes are few, we can generate inputs for each class from different normal distributions, which do not have a great overlap in their densities. Generate from \\(X_i\\) corresponding to class \\(i\\) via \\(X_i \sim N(\mu, \Sigma)\\) and save \\(\{X_i, i\}\\) as one training example. Repeat this as many times as you need samples. This approach also allows to directly determine whether you want to test on an imbalanced or balanced dataset. In a more advanced version, it would also be possible to generate from a regression model as in 1. and use a link function as in generalized linear models.
 
