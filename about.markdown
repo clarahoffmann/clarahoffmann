@@ -4,12 +4,13 @@ title: About me
 permalink: /about/
 ---
 
-I'm a Ph.D. candidate in Uncertainty Quantification and Statistical Learning at the *[Methods for Big Data)](https://www.scc.kit.edu/en/research/mbd.php)*. Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data.
+I'm a Ph.D. candidate at the *[Methods for Big Data)](https://www.scc.kit.edu/en/research/mbd.php)* group at the Karlsruhe Institute of Technology (KIT). Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data.
 
-I'm mainly interest in Bayesian uncertainty quantification for Deep Learning and Signal Processing.
+My main interests are Bayesian uncertainty quantification for Deep Learning and Signal processing.
 
 **Talks & Slides**<br>
 [Honey, I broke the PyTorch model >.< - Debugging custom PyTorch models in a structured manner](https://youtu.be/BDEBF62iZx0?feature=shared) - *Talk at PyCon DE*, 2023
+
 [Marginally calibrated response distributions for end-to-end learning in autonomous driving](https://clarahoffmann.github.io/ete-presentation/), manim-animated slides - *Talk at the German Statistical Week*, 2022
 
 **Publications**<br>
