@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm a Ph.D. candidate in Uncertainty Quantification and Statistical Learning at the *[Methods for Big Data)](https://www.scc.kit.edu/en/research/mbd.php)*. Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data.
 
-I'm mainly interest in Bayesian uncertainty quantification and Deep Learning for Synthetic Aperture Radar.
+I'm mainly interest in Bayesian uncertainty quantification for Deep Learning and Signal Processing.
 
 **Talks & Slides**<br>
 [Honey, I broke the PyTorch model >.< - Debugging custom PyTorch models in a structured manner](https://youtu.be/BDEBF62iZx0?feature=shared) - *Talk at PyCon DE*, 2023
