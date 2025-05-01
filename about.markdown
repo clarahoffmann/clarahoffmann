@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-I'm a Ph.D. candidate at the *[Methods for Big Data)](https://www.scc.kit.edu/en/research/mbd.php)* group at the Karlsruhe Institute of Technology (KIT). Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data.
+I'm a Ph.D. candidate at the *[Methods for Big Data](https://www.scc.kit.edu/en/research/mbd.php)* group at the Karlsruhe Institute of Technology (KIT). Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data.
 
 My main interests are Bayesian uncertainty quantification for Deep Learning and Signal processing.
 
