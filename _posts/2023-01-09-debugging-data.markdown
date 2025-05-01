@@ -25,7 +25,7 @@ The reasons can be manifold: Most commonly, we are dealing with one (or both) of
 
 
 # Find the culprit for the lack of convergence
-<img align="right" src="https://clarahoffmann.github.io/clarahoffmann/images/debug_data_seagull.jpg" alt="drawing" style="width:270px;"  >
+<img align="right" src="https://clarahoffmann.github.io/clarahoffmann/images/debug/debug_data_seagull.jpg" alt="drawing" style="width:270px;"  >
 
 Due to the plethora of potential reasons, debugging the training process is usually not straightforward. Diving into the debugger, decorating the code with print() statements, or going through the training examples by hand does not guarantee that the error is found - and can be quite overwhelming for engineers working under time pressure.
 Luckily, there are more efficient approaches to locating the culprit for models that do not converge. This article introduces three main approaches to identify who's at fault for a lack of convergences and to prevent bugs from appearing again
@@ -43,7 +43,7 @@ Luckily, there are more efficient approaches to locating the culprit for models 
 Synthetic training data is a popular way to prove superiority of new DL methods with low computational effort. Creating synthetic training data requires obtaining some statistical knowledge. This extra effort makes some practicioners refrain from generating synthetic data. But once the concept for creating data is obtained once, the payoff is huge.
 
 <p style="text-align: center;">
-<img  style="display: block;  auto;"  src="https://clarahoffmann.github.io/clarahoffmann/images/synthetic_data_process.png" alt="drawing" style="width:500px;" >
+<img  style="display: block;  auto;"  src="https://clarahoffmann.github.io/clarahoffmann/images/debug/synthetic_data_process.png" alt="drawing" style="width:500px;" >
 </p>
 
 Step (1) comprises questions such as *Do you have pixel level segmentation, object detection with bounding boxes, simple regression or classification?*. Step (2) is the most challenging and is described later in this article.
@@ -77,7 +77,7 @@ Several packages in Python provide functionalities to generate synthetic, nonlin
 - Create empty patches (all initialized to zero) and sample random bounding box coordinates on the patch. Set all values in the patch to a distinct value for each object class. For further complexity, a value for each patch can be generated from a regression model.
 
 <p align="center">
-<img  src="https://clarahoffmann.github.io/clarahoffmann/images/object_detection_generate_data.png" alt="drawing" style="width:500px;"  >
+<img  src="https://clarahoffmann.github.io/clarahoffmann/images/debug/object_detection_generate_data.png" alt="drawing" style="width:500px;"  >
 </p>
 
 
@@ -88,7 +88,7 @@ Training PyTorch models typically involves three building blocks:
 (3) data loaders 
 
 <p align="center">
-<img  src="https://clarahoffmann.github.io/clarahoffmann/images/building_blocks.png" alt="drawing" style="width:700px;"  >
+<img  src="https://clarahoffmann.github.io/clarahoffmann/images/debug/building_blocks.png" alt="drawing" style="width:700px;"  >
 </p>
 
 Each one of these can be subject to errors. It can be quite tricky to locate errors in these structures. This is especially true if we're dealing with dimensionality, value, or range errors. These types of errors often don't hinder our model from running and still produce reasonable outputs.
