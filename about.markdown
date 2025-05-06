@@ -7,7 +7,7 @@ permalink: /about/
 <p>
   <img src="https://clarahoffmann.github.io/clarahoffmann/images/profile/clara_photo.jpg"
        alt="Clara Hoffmann"
-       style="float: left; margin-right: 40px; width: 200px;">
+       style="float: left; margin-right: 40px; width: 400px;">
   I'm currently a Ph.D. candidate at the <em><a href="https://www.scc.kit.edu/en/research/mbd.php">Methods for Big Data</a></em> group at the Karlsruhe Institute of Technology (KIT).
 </p>
   My main interests are Bayesian uncertainty quantification for Deep Learning and Signal processing.
