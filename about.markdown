@@ -8,11 +8,10 @@ permalink: /about/
   <img src="https://clarahoffmann.github.io/clarahoffmann/images/profile/clara_photo.jpg"
        alt="Clara Hoffmann"
        style="float: left; margin-right: 40px; width: 400px;">
-  I'm currently a Ph.D. candidate at the <em><a href="https://www.scc.kit.edu/en/research/mbd.php">Methods for Big Data</a></em> group at the Karlsruhe Institute of Technology (KIT).
-</p>
-  My main interests are Bayesian uncertainty quantification for Deep Learning and Signal processing.
+  I'm a Ph.D. candidate at the <em><a href="https://www.scc.kit.edu/en/research/mbd.php">Methods for Big Data</a></em> group at the Karlsruhe Institute of Technology (KIT) since 2023.
+  I obtained a master's degree in Statistics and a bachelor's in Economics at Humboldt University in Berlin.  Before returning to academia, I worked as an ML Engineer with Synthetic Aperture Radar data. 
 <p>
-  Formerly, I worked as an ML Engineer with Synthetic Aperture Radar data. 
+  My work revolves around (partially) Bayesian neural networks: How to estimate them, how they quantify uncertainty and where it's best to apply them. Application-wise, I'm most interested in signal processing. 
 </p>
 
 
@@ -29,7 +28,7 @@ permalink: /about/
   <li style="margin-bottom: 10px;">
     <a href="https://clarahoffmann.github.io/ete-presentation/">
       Marginally calibrated response distributions for end-to-end learning in autonomous driving
-    </a>, manim-animated slides - <em>Talk at the German Statistical Week, 2022</em>
+    </a> (manim-animated slides) - <em>Talk at the German Statistical Week, 2022</em>
   </li>
 </ul>
 
@@ -38,7 +37,15 @@ permalink: /about/
   <li style="margin-bottom: 10px;">
     <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-17/issue-2/Marginally-calibrated-response-distributions-for-end-to-end-learning-in/10.1214/22-AOAS1693.short">
       Marginally calibrated response distributions for end-to-end learning in autonomous driving
-    </a> - <em> Annals of Applied Statistics, 2022</em>
+    </a> - <em> Annals of Applied Statistics, 2023</em>
+  </li>
+</ul>
+
+<h3>Prizes</h3>
+<ul style="padding-left: 20px; list-style-type: none;">
+  <li style="margin-bottom: 10px;">
+      Young Statistican Award for the best Master thesis
+    - <em> German Statistical Association (DStatG), 2022</em>
   </li>
 </ul>
 
