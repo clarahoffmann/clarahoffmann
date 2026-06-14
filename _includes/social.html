@@ -1,0 +1,8 @@
+<ul class="social-media-list" style="display: flex; gap: 16px; list-style: none; padding: 0; align-items: center;">
+  {%- if site.github_username -%}
+  <li style="margin: 0;"><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" style="display: flex; align-items: center;"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a></li>
+  {%- endif -%}
+  {%- if site.linkedin_username -%}
+  <li style="margin: 0;"><a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" style="display: flex; align-items: center;"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a></li>
+  {%- endif -%}
+</ul>

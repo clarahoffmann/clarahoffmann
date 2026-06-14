@@ -1,0 +1,18 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col" style="display: flex; align-items: center; gap: 16px;">
+{%- if site.github_username -%}
+        <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" style="display: flex; align-items: center; gap: 4px;"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a>
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" style="display: flex; align-items: center; gap: 4px;"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a>
+        {%- endif -%}
+        <a href="{{ '/cv/CV_Clara_Hoffmann.pdf' | relative_url }}" target="_blank" style="display: flex; align-items: center; gap: 4px;"><svg class="svg-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 0h6l4 4v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zm5 1v4h4L9 1zM4 7h8v1H4V7zm0 3h8v1H4v-1zm0 3h5v1H4v-1z"/></svg> <span class="username">CV</span></a>
+      </div>
+    </div>
+  </div>
+
+</footer>

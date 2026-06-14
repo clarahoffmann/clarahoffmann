@@ -23,8 +23,10 @@ description: >- # this means to ignore newlin es until "baseurl:"
   
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://clarahoffmann.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: clarahoffmann16
 github_username: clarahoffmann
+linkedin_username: clara-hoffmann-62a8a7193
+
+header_pages: []
 
 # Build settings
 theme: minima
